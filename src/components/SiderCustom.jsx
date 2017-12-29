@@ -8,6 +8,8 @@ import {
 } from 'react-router-dom'
 
 const { Sider } = Layout;
+const SubMenu = Menu.SubMenu;
+
 
 class App extends Component {
   render() {
@@ -27,16 +29,17 @@ class App extends Component {
           </Menu.Item>
           <Menu.Item key="2">
             <Icon type="video-camera" />
-            <Link to="/bubblegum">Bubblegum</Link>
+            <Link to="/about">关于我们</Link>
           </Menu.Item>
-          <Menu.Item key="3">
-            <Icon type="upload" />
-            <span className="nav-text">nav 3</span>
-          </Menu.Item>
-          <Menu.Item key="4">
-            <Icon type="user" />
-            <span className="nav-text">nav 4</span>
-          </Menu.Item>
+          <SubMenu
+              key="sub1"
+              title={<span><Icon type="user" /><span>产品</span></span>}
+            >
+              <Menu.Item key=""><Link to="/pro1">产品1</Link></Menu.Item>
+              <Menu.Item key=""><Link to="/pro2">产品2</Link></Menu.Item>
+              <Menu.Item key=""><Link to="/pro3">产品3</Link></Menu.Item>
+            </SubMenu>
+
         </Menu>
       </Sider>
     );

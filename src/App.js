@@ -13,18 +13,31 @@ const routes = [
   {
     path: "/",
     exact: true,
-    sidebar: () => <span>home!</span>,
+    sidebar: () => <span>首页</span>,
     main:  AboutMe 
   },
   {
-    path: "/bubblegum",
-    sidebar: () => <span>bubblegum!</span>,
+    path: "/about",
+    sidebar: () => <span>联系我们</span>,
     main: ConMe 
   },
   {
-    path: "/shoelaces",
-    sidebar: () => <div>shoelaces!</div>,
-    main: () => <h2>Shoelaces</h2>
+    path: "/pro1",
+    exact: true,
+    sidebar: () => <span>产品1</span>,
+    main:  ConMe 
+  },
+  {
+    path: "/pro2",
+    exact: true,
+    sidebar: () => <span>产品2</span>,
+    main:  AboutMe 
+  },
+  {
+    path: "/pro3",
+    exact: true,
+    sidebar: () => <span>产品3</span>,
+    main:  ConMe 
   }
 ];
 
