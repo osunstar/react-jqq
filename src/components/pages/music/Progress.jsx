@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import { Layout, Menu, Icon } from 'antd';
-const { Header, Content, Footer, Sider } = Layout;
 
 
-class ConMe extends Component {
+class Progress extends Component {
   render() {
     return (
       <div>
-        conme
-          </div>
+       {this.props.Progress}
+        </div>
     );
   }
 }
 
-export default ConMe;
+export default Progress;

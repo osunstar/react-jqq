@@ -6,7 +6,9 @@ const { Header, Content, Footer, Sider } = Layout;
 class App extends Component {
   render() {
     return (
-      <Header style={{ background: '#fff', padding: 0 }} />
+      <Header style={{ background: '#fff', padding: 0 }}>
+        
+      </Header>
     );
   }
 }
