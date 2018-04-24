@@ -1,4 +1,6 @@
+import '../mock/data'
 import React, { Component } from 'react';
+import { request, requestAll } from "../utils/request"
 
 class User extends Component {
     constructor(props) {
@@ -9,7 +11,11 @@ class User extends Component {
 
     }
     componentDidMount() {
-
+        request('/data').then(response=>{
+           return response.text()
+        }).then(data=>{
+            console.log(data);  
+        })
     }
 
     render() {

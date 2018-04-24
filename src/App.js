@@ -4,7 +4,7 @@ import "./App.css";
 import { Layout, Menu, Icon } from "antd";
 import SiderCustom from "./components/SiderCustom";
 import HeaderCustom from "./components/HeaderCustom";
-import AboutMe from "./components/pages/AboutMe";
+import AboutMe from "./components/pages/work/WorkList";
 import LoveMusic from "./components/pages/music/LoveMusic";
 import CentralManage from "./components/centers/CentralManage"
 import User from "./components/centers/User"
